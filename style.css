@@ -25,7 +25,7 @@ header{
 header img{
     width: 180px;
     height: 100px;
-    margin: 30px 200px 0px 250px;
+    margin: 40px 200px 0px 250px;
 }
 
 header h1{
@@ -39,7 +39,7 @@ header p{
     margin: 30px 400px 0px 250px;
 }
 
-nav{
+nav, .section2-row1, .section2-row2, .section3-wrapper, .footer-wrapper, .footer-right-panel{
     display: flex;
     flex-direction: row;
 }
@@ -61,7 +61,7 @@ nav li{
 .search-wrapper{
     display: flex;
     flex-direction: row;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0px 0px 0px 180px;
 }
 
@@ -82,8 +82,16 @@ nav li{
 }
 hr{
     color: white;
-    width: 100px;
-    size: 2px solid;
+    width: 270px;
+    margin-right: 120px;
+    size: 2px solid;    
+}
+
+
+.break-line{
+    display: flex;
+    max-width: 700px;
+    margin: -10px 0px 0px 253px;
     
 }
 
@@ -99,17 +107,6 @@ button{
     font-weight: bolder;
 }
 
-.break-line{
-    display: flex;
-    max-width: 700px;
-    margin: -10px 0px 0px 253px;
-    
-}
-hr{
-    margin-right: 120px;
-    width: 270px;
-}
-
 .section1{
     position:relative;
     font-family: 'Prompt', sans-serif;
@@ -123,7 +120,7 @@ hr{
 }
 
 .section1-title{
-    margin: 80px 0px 20px 75px;
+    margin: 80px 0px 20px 100px;
 }
 
 .section1-items{
@@ -135,13 +132,15 @@ hr{
 }
 
 .section1-item{
-    padding: 30px;
+    padding: 50px;
+    margin: 20px 0px 20px 0px;
+    line-height: 1.7rem;
 }
 
 .section1 img{
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    
 }
 
 .section2{
@@ -149,7 +148,7 @@ hr{
     height: 100vh;
     color: rgb(75, 75, 75);
     justify-content: center;
-    margin: 150px 150px 50px 150px;   
+    margin: 200px 150px 50px 150px;   
 }
 
 .section2-title{
@@ -165,11 +164,6 @@ hr{
 
 .section2-title a{
     margin-left: 600px;
-}
-
-.section2-row1{
-    display: flex;
-    flex-direction: row;
 }
 
 .section2-row1  h1{
@@ -195,12 +189,6 @@ hr{
 .section2-row1 .item2 {
     background: url(./Assets/shutterstock_772560277.jpg);
     background-repeat: no-repeat;
-}
-
-
-.section2-row2{
-    display: flex;
-    flex-direction: row;
 }
 
 .section2-row2  h1{
@@ -239,13 +227,9 @@ hr{
     height: 100vh;
     color: rgb(75, 75, 75);
     justify-content: center;
-    margin: 150px 150px 50px 150px;
+    margin: 120px 150px 50px 150px;
 }
 
-.section3-wrapper{
-    display: flex;
-    flex-direction: row;
-}
 
 .section3 h1{
     max-width: 350px;
@@ -276,4 +260,45 @@ hr{
 .section3b img{
     width: 750px;
     height:400px;
+}
+
+/* footer begins here */
+
+footer{
+    height: 45vh;
+    margin: 150px 0px 0px 0px;
+    background: rgb(4, 26, 34);
+    color: white;
+}
+
+
+footer img{
+    width: 180px;
+    height: 100px;
+    margin: 100px 200px 0px 250px;
+}
+
+.footer-right-panel{
+    margin: 120px 150px 0px 250px;
+}
+
+.footer-right-panel ul{
+    list-style-type: none;
+}
+
+
+.footer-right-panel-row{
+    margin: 0px 50px 0px 50px;
+}
+
+.footer-right-panel-row h3{
+    margin: 0px 0px 0px 40px;
+}
+.footer-right-panel li{
+    line-height: 1.9rem;
+}
+
+
+@media screen  {
+    
 }

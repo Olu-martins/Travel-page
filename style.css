@@ -1,304 +1,294 @@
-body{
-    margin: 0px auto;
+*{
+  box-sizing: border-box;
 }
 
-#color-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(6, 1, 53);
-    opacity: 0.3;
- }
+html,
+body{
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+h1,h2,h3{
+  font-weight: 700;
+}
+
+p{
+  line-height: 1.5;
+}
+
+
+a{
+  text-decoration: none;
+  font-weight: 600;
+}
+
 
 header{
-    position: relative; 
-    height: 135vh;
-    background: url(./Assets/shutterstock_772560277.jpg);
-    background-repeat: no-repeat;
-    color: white;
-    font-family: 'Prompt', sans-serif;
-    font-weight: bolder;
+  background: url(./Assets/Paris.jpeg);
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(78, 78, 78, 0.6);
+  padding-bottom: 10rem;
+  color: white;
 }
 
-header img{
-    width: 180px;
-    height: 100px;
-    margin: 40px 200px 0px 250px;
+nav{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  padding-top: 1rem;
 }
 
-header h1{
-    max-width: 750px;
-    margin: 200px 0px 0px 250px;
-}
-
-header p{
-    line-height: 3vh;
-    max-width: 600px;
-    margin: 30px 400px 0px 250px;
-}
-
-nav, .section2-row1, .section2-row2, .section3-wrapper, .footer-wrapper, .footer-right-panel{
-    display: flex;
-    flex-direction: row;
+nav p{
+  font-size: 1.8rem;
 }
 
 nav ul{
-    float: right;
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    margin: 0px 0px 0px 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
 }
 
 nav li{
-    margin: 80px 80px 0px 30px;
-    float: right;
-    list-style-type: none;    
+  list-style: none;
 }
 
-.search-wrapper{
-    display: flex;
-    flex-direction: row;
-    max-width: 900px;
-    margin: 0px 0px 0px 180px;
+.header{
+  margin: 15rem auto;
+  width: 75%;
 }
 
-
-.search-wrapper ul{
-  
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: -20px;
+.header h1{
+  font-size: 2rem;
+  width: 55%;
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-.search-wrapper li{
-    width: 300px;
-    margin: 40px 44px 0px 50px;
-    list-style-type:disc;
-    
-}
-hr{
-    color: white;
-    width: 270px;
-    margin-right: 120px;
-    size: 2px solid;    
+.header p{
+   font-size: 1.2rem;
+   width: 50%;
 }
 
-
-.break-line{
-    display: flex;
-    max-width: 700px;
-    margin: -10px 0px 0px 253px;
-    
+.search{
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  padding-left: 1rem;
+  justify-content: space-between;
 }
 
-button{
-    width: 140px;
-    height:40px;
-    margin: 80px 0px 0px 0px;
-    background: rgb(70, 145, 207);
-    border: none;
-    color: white;
-    font-size: 17px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bolder;
+.search button{
+  background: #0a5dda;
+  border: none;
+  padding: 0.9rem 3rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
 }
 
-.section1{
-    position:relative;
-    font-family: 'Prompt', sans-serif;
-    height: 70vh;
-    color: rgb(75, 75, 75);
-    background: rgb(255, 254, 254);
-    justify-content: center;
-    margin: -190px 150px 50px 150px;
-    border: 5px solid rgb(250, 250, 250);
-
+.benefits{
+  width: 80%;
+  height: 67vh;
+  margin: 0 auto;
+  margin-top: -13rem;
+  align-items: center;
+  justify-content: center;
+  background: rgb(247, 247, 247);
+  padding: 5rem ;
+  border-radius: 1.5rem;
+  margin-bottom: 8rem;
 }
 
-.section1-title{
-    margin: 80px 0px 20px 100px;
-}
-
-.section1-items{
-    margin: 70px 0px 50px 50px;
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-
-}
-
-.section1-item{
-    padding: 50px;
-    margin: 20px 0px 20px 0px;
-    line-height: 1.7rem;
-}
-
-.section1 img{
-    width: 80px;
-    height: 80px;
-    
-}
-
-.section2{
-    font-family: 'Prompt', sans-serif;
-    height: 100vh;
-    color: rgb(75, 75, 75);
-    justify-content: center;
-    margin: 200px 150px 50px 150px;   
-}
-
-.section2-title{
-    display: flex;
-    flex-direction: row;
-    margin: 100px 0px 50px 0px ;
-}
-
-.section2-title h1 {
-    margin: 0px 500px 0px 0px;
-
-}
-
-.section2-title a{
-    margin-left: 600px;
-}
-
-.section2-row1  h1{
-    text-align: left;
-    font-size: 40px;
-    font-weight: bolder;
-    margin: 275px 0px 0px -30px;
-}
-
-.section2-row1 div{
-    width: 700px;
-    height: 300px;
-    padding: 50px;
-    border:5px solid white;
-    color: whitesmoke;
-}
-
-.section2-row1 .item1 {
-    background: url(./Assets/Paris-in-a-Day-780x420.jpg);
-    background-repeat: no-repeat;
-}
-
-.section2-row1 .item2 {
-    background: url(./Assets/shutterstock_772560277.jpg);
-    background-repeat: no-repeat;
-}
-
-.section2-row2  h1{
-    text-align: left;
-    font-size: 40px;
-    font-weight: bolder;
-    margin: 175px 0px 0px -30px;
-}
-.section2-row2 div{
-    width: 405px;
-    height: 200px;
-    padding: 50px;
-    border:5px solid white;
-    color: whitesmoke;
-}
-
-.section2-row2 .item1 {
-    background: url(./Assets/Paris.jpeg);
-    background-repeat: no-repeat;
+.benefits-box{
+  display: flex;
+  flex-direction: row;
 }
 
 
-.section2-row2 .item2 {
-    background: url(./Assets/Places-to-visit-in-paris2.png);
-    background-repeat: no-repeat;
+.benefits h1{
+  font-weight: 800px;
+  margin-top: -1.5rem;
+  padding: 0 2rem;
+  margin-bottom: 5rem;
 }
 
-.section2-row2 .item3 {
-    background: url(./Assets/Paris.jpeg);
-    background-repeat: no-repeat;
-}
-
-/* section3 begins here  */
-.section3{
-    font-family: 'Prompt', sans-serif;
-    height: 100vh;
-    color: rgb(75, 75, 75);
-    justify-content: center;
-    margin: 120px 150px 50px 150px;
+.travel-benefit h3, p, a{
+  margin: 2rem 0;
+  padding: 1rem 2rem;
 }
 
 
-.section3 h1{
-    max-width: 350px;
-} 
-
-.left-panel img{
-    width: 700px;
-    height: 400px;
+.travel-benefit img{
+  width: 20%;
+  border-radius: 10rem;
+  margin-left: 2rem;
 }
 
-.right-panel{
-    line-height: 4vh;
-    padding: 50px 100px 50px 120px;
+.get-inspired{
+  width: 80%;
+  align-items: center;
+  margin: 0 auto;
 }
 
-.section3b{
-    display: flex;
-    flex-direction: row;
-    margin: 50px 0px 0px 0px;
-    
+.get-inspired-boxs h1{
+  margin-top: 16rem;
+  margin-left: 2rem;
+  color: white;
 }
 
-.section3b .left{
-    line-height: 4vh;
-    padding: 40px 120px 50px 50px;
+.get-inspired-title{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
-.section3b img{
-    width: 750px;
-    height:400px;
+
+.get-inspired-box1{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.6rem;
 }
 
-/* footer begins here */
+.get-inspired-box1 .city1{
+  background: url(./Assets/black-paris-tour-feature-2.jpg);
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(78, 78, 78, 0.6);
+  width: 50%;
+  height: 25rem;
+  margin-right: 0.3rem;
+}
+
+.get-inspired-box1 .city2{
+  background: url(./Assets/france-paris-woman-with-croissant-standing-in-front-of-seine-river-and-eiffel-tower-GEMF000902.jpg);
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(78, 78, 78, 0.6);
+  width: 50%;
+  height: 25rem;
+  margin-left: 0.3rem;
+}
+
+.get-inspired-box2{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rem;
+}
+
+.get-inspired-box2 .city1{
+  background: url(./Assets/scale.jpeg);
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(78, 78, 78, 0.6);
+  width: 33.33%;
+  height: 20rem;
+}
+
+
+.get-inspired-box2 .city2{
+  background: url(./Assets/salon-rue-rivoli-643x429.jpg);
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(78, 78, 78, 0.6);
+  width: 33.33%;
+  height: 20rem;
+  margin: 0 0.5rem;
+}
+
+.get-inspired-box2 .city3{
+  background: url(./Assets/Places-to-visit-in-paris2.png);
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(78, 78, 78, 0.6);
+  width: 33.33%;
+  height: 20rem;
+}
+
+/* Neighborhood section starts here */
+.Neighborhood{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+}
+
+.Neighborhood-box1, .Neighborhood-box2{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+
+.Neighborhood img{
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+}
+
+
+.Neighborhood-box1 h1{
+  padding-right: 35rem;
+  line-height: 1.7rem;
+  margin-left:  10rem;
+}
+
+.Neighborhood-box2 h1{
+  padding-right: 15rem;
+  line-height: 1.7rem;
+  margin: 3rem 10rem;
+}
+
+.Neighborhood p{
+  padding: 0 10rem;
+  line-height: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.Neighborhood a{
+  margin-left: 8rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/*  Foooter section begins here */
 
 footer{
-    height: 45vh;
-    margin: 150px 0px 0px 0px;
-    background: rgb(4, 26, 34);
-    color: white;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 45vh;
+  margin: auto;
+  padding: 5rem 0 ;
+  justify-content: space-between;
+  background: #081e33;
+  color: #fff;
 }
 
 
-footer img{
-    width: 180px;
-    height: 100px;
-    margin: 100px 200px 0px 250px;
+footer h1{
+  margin-left: 10rem;
+  font-size: 1.5rem;
+}
+.socia-icon{
+  display: flex;
+  flex-direction: row;
+  margin-right: 8rem;
 }
 
-.footer-right-panel{
-    margin: 120px 150px 0px 250px;
+.social-icon-row{
+margin: 1rem 2rem;
 }
 
-.footer-right-panel ul{
-    list-style-type: none;
+.social-icon-row h3{
+  margin-left: 2.5rem;
+  
 }
 
-
-.footer-right-panel-row{
-    margin: 0px 50px 0px 50px;
-}
-
-.footer-right-panel-row h3{
-    margin: 0px 0px 0px 40px;
-}
-.footer-right-panel li{
-    line-height: 1.9rem;
-}
-
-
-@media screen  {
-    
+.social-icon-row li{
+  list-style-type: none;
+  line-height: 2rem;
 }
